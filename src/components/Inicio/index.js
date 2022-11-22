@@ -19,9 +19,9 @@ const Inicio = () => {
             </button>
           </div>
         </div>
+        <div className="point-degraded-lefth "></div>
+        <div className="point-degraded-rigth"></div>
       </div>
-      <div className="point-degraded-lefth "></div>
-      <div className="point-degraded-rigth"></div>
     </div>
   );
 };
