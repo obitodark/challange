@@ -1,0 +1,107 @@
+.container-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  z-index: 5;
+}
+.container-inicio div:first-child {
+  width: 700px;
+}
+.container-inicio h1 {
+  font-size: 85px;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.container-inicio > div > :last-child {
+  display: flex;
+  justify-content: center;
+
+  padding: 20px 0;
+}
+.btn-get-start {
+  width: 156px;
+  height: 56px;
+  font-weight: 600;
+}
+.container-inicio p {
+  color: #888ba8;
+  font-size: inherit;
+  text-align: center;
+
+  padding: 0 100px;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+/* point degraded*/
+
+.point-degraded-lefth {
+  position: absolute;
+  z-index: -1;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: none;
+  background-color: #11655a;
+  top: 10%;
+  left: 10%;
+  box-shadow: -50px -60px 100px rgba(19, 61, 84, 1),
+    -50px -100px 200px rgba(19, 61, 84, 1), -50px -100px 300px #133d54;
+
+  filter: blur(50px);
+}
+
+.point-degraded-rigth {
+  position: absolute;
+  z-index: -1;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: none;
+  background-color: #3833b4;
+  top: 60%;
+  right: -10%;
+  box-shadow: -180px -180px 100px #4b2b6a, -50px -300px 250px #334d80;
+
+  filter: blur(70px);
+}
+@media only screen and (max-width: 800px) {
+  .point-degraded-rigth {
+    top: 100%;
+    right: -50%;
+    transition: all ease;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container-inicio div:first-child {
+    width: 500px;
+    transition: all ease;
+  }
+  .container-inicio h1 {
+    font-size: 70px;
+  }
+  .container-inicio p {
+    padding: 0;
+  }
+  .point-degraded-rigth {
+    top: 110%;
+    right: -50%;
+    transition: all ease;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container-inicio div:first-child {
+    width: 400px;
+  }
+  .point-degraded-rigth {
+    top: 110%;
+    right: -80%;
+    transition: all ease;
+  }
+}
+@media only screen and (max-width: 320px) {
+}
