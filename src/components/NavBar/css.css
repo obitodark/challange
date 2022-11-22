@@ -38,6 +38,7 @@ body {
   transition: all 0.2s ease-in;
 }
 .menu-lateral div ul {
+  position: relative;
   left: -40px;
   text-decoration: none;
   list-style: none;
